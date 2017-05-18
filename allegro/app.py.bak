@@ -59,7 +59,7 @@ class Allegro(object):
     def start(self):
         try:
             self.init_route()
-            print((self.pid_path))
+            print(self.pid_path)
             with open(self.pid_path, "a") as f:
                 f.write(str(os.getpid())+"\n")
 

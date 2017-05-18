@@ -20,7 +20,7 @@ class BaseService(rpc.RpcServer):
         body = dict()
         optype = message.pop("optype")
         consumer = eval(self.consumer)()
-        for content in list(message.keys()):
+        for content in message.keys():
             if message[content] != {} and message[content] != None:
                 body[content] = message[content]
         return self._request_handler(consumer, optype, body)
