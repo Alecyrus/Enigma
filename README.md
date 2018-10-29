@@ -9,6 +9,8 @@ Allegro is a python backend integration framework, which provides a simple way t
 
 With the framework, the API can be defined through a config file, and we just focus on the processing logic. What's more, it' very efficient and easy for frond-end to build a mock server.
 
+**Important:** This is **not** library for integration with Allegro.pl REST API
+
 ## Installation
 > `pip3 install allegro`
 
